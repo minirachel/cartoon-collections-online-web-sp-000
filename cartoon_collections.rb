@@ -12,11 +12,7 @@ end
 
 def find_the_cheese(food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
-  while i < cheese_types.length
-    yield(cheese_types[i])
-    i += 1
-  end
-
-  find_the_cheese(food){|snacks| "#{snacks}" == "#{cheese_types[i]}"}
+  cheese_types.each do |cheeses|
+  if find_the_cheese.include?(cheeses)
+    puts "#{cheeses}"
 end
