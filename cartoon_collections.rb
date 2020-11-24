@@ -7,7 +7,7 @@ def summon_captain_planet(summon)
 end
 
 def long_planeteer_calls(calls)
-  calls.include?{|word| word.length > 4}
+  calls.map{|word| calls.include?(word.length > 4)}
 end
 
 def find_the_cheese# code an argument here
