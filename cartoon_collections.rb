@@ -18,7 +18,5 @@ def find_the_cheese(food)
     i += 1
   end
 
-  if food.include?(cheese_types[i])
-    puts "#{cheese_types[i]}"
-  end
+  find_the_cheese(food){|snacks| "#{snacks}" == "#{cheese_types[i]}"}
 end
