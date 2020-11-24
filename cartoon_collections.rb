@@ -15,4 +15,6 @@ def find_the_cheese(food)
   cheese_types each do |cheese|
     if find_the_cheese.include?(cheese)
       find_the_cheese.find{|snacks| "#{snacks}" == "#{cheese}"}
+    end
+  end
 end
